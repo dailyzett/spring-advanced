@@ -14,7 +14,7 @@ public class FieldServiceTest {
 		log.info("main start");
 		Runnable userA = () -> fieldService.logic("userA");
 		Runnable userB = () -> fieldService.logic("userB");
-		
+
 		Thread threadA = new Thread(userA);
 		threadA.setName("thread-A");
 		Thread threadB = new Thread(userB);
